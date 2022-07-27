@@ -1,0 +1,1 @@
+-wto "90366c9ea805425695408a847c3acc1c" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "divider_fara_ref_tb_behav" "xil_defaultlib.divider_fara_ref_tb" -log "elaborate.log" 

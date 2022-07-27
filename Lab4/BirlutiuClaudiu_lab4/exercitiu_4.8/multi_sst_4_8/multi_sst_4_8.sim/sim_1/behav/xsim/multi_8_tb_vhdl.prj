@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../multi_sst_4_8.srcs/sources_1/new/sumator_elementar.vhd" \
+"../../../../multi_sst_4_8.srcs/sources_1/new/sumator_sst.vhd" \
+"../../../../multi_sst_4_8.srcs/sources_1/new/sumator_spt.vhd" \
+"../../../../multi_sst_4_8.srcs/sources_1/new/multi_sst.vhd" \
+"../../../../multi_sst_4_8.srcs/sources_1/imports/new/sumator_4.vhd" \
+"../../../../multi_sst_4_8.srcs/sim_1/new/multi_sst_tb.vhd" \
+
+# Do not sort compile order
+nosort

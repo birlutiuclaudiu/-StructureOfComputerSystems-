@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../automat_3_7.srcs/sources_1/new/controller_memorie.vhd" \
+"../../../../automat_3_7.srcs/sim_1/new/controller_memorie_tb.vhd" \
+
+# Do not sort compile order
+nosort

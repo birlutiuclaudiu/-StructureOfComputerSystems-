@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="synth_1" LaunchDir="/home/birlutiuclaudiu/Facultate/An3_sem1/SSC/Laborator/Lab7/BirlutiuClaudiu_Lab7/Exercitii_7.2_7.3_7.4/SPI_mode/SPI_mode.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="impl_1" LaunchDir="/home/birlutiuclaudiu/Facultate/An3_sem1/SSC/Laborator/Lab7/BirlutiuClaudiu_Lab7/Exercitii_7.2_7.3_7.4/SPI_mode/SPI_mode.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

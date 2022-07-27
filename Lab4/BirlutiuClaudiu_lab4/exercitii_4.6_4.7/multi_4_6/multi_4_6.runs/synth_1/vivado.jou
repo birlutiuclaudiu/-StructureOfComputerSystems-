@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Oct 18 16:27:30 2021
+# Process ID: 45163
+# Current directory: /home/birlutiuclaudiu/Facultate/An3_sem1/SSC/Laborator/Lab4/BirlutiuClaudiu_lab4/multi_4_6/multi_4_6.runs/synth_1
+# Command line: vivado -log main_mul.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main_mul.tcl
+# Log file: /home/birlutiuclaudiu/Facultate/An3_sem1/SSC/Laborator/Lab4/BirlutiuClaudiu_lab4/multi_4_6/multi_4_6.runs/synth_1/main_mul.vds
+# Journal file: /home/birlutiuclaudiu/Facultate/An3_sem1/SSC/Laborator/Lab4/BirlutiuClaudiu_lab4/multi_4_6/multi_4_6.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source main_mul.tcl -notrace

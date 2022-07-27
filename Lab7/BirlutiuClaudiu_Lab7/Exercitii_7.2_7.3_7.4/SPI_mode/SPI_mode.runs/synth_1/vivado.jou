@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Dec 12 18:34:47 2021
+# Process ID: 61220
+# Current directory: /home/birlutiuclaudiu/Facultate/An3_sem1/SSC/Laborator/Lab7/BirlutiuClaudiu_Lab7/Exercitii_7.2_7.3_7.4/SPI_mode/SPI_mode.runs/synth_1
+# Command line: vivado -log Main_ADXL362.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main_ADXL362.tcl
+# Log file: /home/birlutiuclaudiu/Facultate/An3_sem1/SSC/Laborator/Lab7/BirlutiuClaudiu_Lab7/Exercitii_7.2_7.3_7.4/SPI_mode/SPI_mode.runs/synth_1/Main_ADXL362.vds
+# Journal file: /home/birlutiuclaudiu/Facultate/An3_sem1/SSC/Laborator/Lab7/BirlutiuClaudiu_Lab7/Exercitii_7.2_7.3_7.4/SPI_mode/SPI_mode.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Main_ADXL362.tcl -notrace

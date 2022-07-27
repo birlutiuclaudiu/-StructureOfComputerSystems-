@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Oct  2 16:45:03 2021
+# Process ID: 30165
+# Current directory: /home/birlutiuclaudiu/Facultate/An3_sem1/SSC/disp_seg/disp_seg.runs/synth_1
+# Command line: vivado -log ssd_main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ssd_main.tcl
+# Log file: /home/birlutiuclaudiu/Facultate/An3_sem1/SSC/disp_seg/disp_seg.runs/synth_1/ssd_main.vds
+# Journal file: /home/birlutiuclaudiu/Facultate/An3_sem1/SSC/disp_seg/disp_seg.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source ssd_main.tcl -notrace

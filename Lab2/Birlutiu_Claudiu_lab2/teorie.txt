@@ -1,0 +1,37 @@
+ 2.1
+
+a) Care sun avantajele simularii asistate de calculator?
+    Principalele avantaje se referea la testarea sistematica a sistemelor prin prin aplicarea unui numar mare de vectori de test, expreminatarea cu diferite variante de roiectare ci conditii de functionare ale sistemului fara a fi necesara implementarea lor in vederea obtinerii performantelor dorite (se va alege varianta cea mai convenabila dintre cele testate) si de asemenea pentru circuitele digitale complexe simularea reduce costurile si numraul de erori care apar in momentul implementarii.
+
+b) Care sunt principalele tipuri de simulare?
+    simularea functtionala, simularea temporala , simularea la nivel de circuite si simularea  logica
+
+c) Care sunt tipurile de intrari necesare pentru un simulator si ce metode pot fi utilizate pentru specificarea acestor intrari?
+ Sunt 2 tipuri de intrari necesare pentru un simulator: un fisier cu descrierea fisierului (sub forma de conexiuni sau descriere hardware HDL - in cazul schemelor logige si diagramelor de stare acestea treboie translatate intr-o lista de comexiuni)  si al doilea tip se refera la setul de stimuli ce definesc semnalele de intrare de-a lungul simularii (definirea acestor stimuli se realizeaza fie prin interfete grafice, fisiere text sau apecificati la nivelul liniei de comanda)
+
+ d) Care sunt metodele pentru verificarea automata a rezultatelor simularii intr-un banc de test?
+  O metoda consta in compararea rezultatelor obtinute in urma simularii cu raspunsurile corecte ale circuitului ce sunt stocate intr-un fisier. Rezultatele simularii se vor scrie si ele intr-un fisier si se compara continutul celor doua fisiere.
+  O alta metoda se refera la compararea fiecarui raspuns al circuitului in timpul simularii si nu la sfarsitul simularii. Raspunsurile corecte pot fi stocate intr-un fisier sau generate si ele intimpul simularii dar cu o alta metoda decat cea folosita in cadrul sistemului de testat.
+
+  2.2 explicati urmatoarele notiuni
+  Simulare bazata pe evenimente.
+    Un eveniment se refera la modificarea starii unui semnal, iar raspunsurile sistemelor de testat sunt constituite pe astfel de evenimente. Acest tip de simulare are la baza 3 concepte importante : timpul de simulare, procesarea eveimentelor si intarzierea delta.
+    In cadrul acestui tip de simulare, simulatorul tine evidenta timpului de simulare, care este momentul de timp pentru care s-a realizat simularea. In momentul in care se realizeza o modificare a unui semnal se va adauga aceste evenimente in coada de evenimente a timpului de simulare la care a aparut aceasta modificare , lucru care va genera alte evenimente si implicit se va incepe o noua reevaluare.
+
+  Intarziere delta si ciclu delta
+    Conceptul de intarziere delta apare in momentul in care un semnal trebuie actualizat simultan cu unul din semnalele din care este generat. Aceasta intarziere se considera infintezimala si implica un ciclu delta pentru actualizarea semnalelor. In principiu, daca la timpul curent de simulare valoarea unei expresii din dreapta va fi planificta sa fie asignata la semnalul X (cel din stanga <=) dupa o intarziere delta de la timpul curent de simulare. Evenimentele ce apar la momentul T+delta pot sa genereze alte evenimente care vor planificate pentru o noua intarziere delta si astfel se explica conceptul de ciclu delta. Evenimentele sunt procesate si vor generea noi intarzieri delta care vor rezolva situatia de asignarea a valorilor semnalelor, iar acest lucru se repeta pana cand nu vor mai fi alte evenimente planificate pentru timpul curent de simulare (doar in momentul acesta timpul de simulare este incrementat). Toate aceste aspecte vin in completarea conceptului de simulare bazata pe evenimente.
+
+  Forma de unda proiectata
+    Setul de tranzactii care specifica noi valori pentru un semnal si momentul de timp in care se va realiza actualizara semnnalului va reprezenta driverul acelui semnal care se gaseste descris printr-o forma de unda proiectata. La simularea modelelor de elaborate pentru sinteza se regasesc doua tipuri de tranzactii care trebuie pastrate pentru fiecare semnal dat: tranzactia curenta(valoarea curenta ) si tranzactia urmatoare (in cazul in care exusta, care va specifica noua valoare a semnalalului la urmatoarea intarziere delta).
+
+
+
+
+
+
+
+
+
+
+
+

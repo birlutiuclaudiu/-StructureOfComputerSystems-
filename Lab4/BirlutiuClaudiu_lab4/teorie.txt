@@ -1,0 +1,19 @@
+ 
+4.1 
+a) Care este principiul sumatorului cu anticiparea transportului?
+	Constructia unui astfel de sumator a fost necesara pentru a creste viteza operatiei de adunare prin reducerea timpului necesar pentru generarea semnalelor de transport. Intrarea de transport pentru un etaj va fi generata in mode direct, utilizand semnale de la toate etajele precedente, fara a astepta propagarea semnalului de la un etaj la altul. Vor exista blocuri de circuite pentru calculu semnalelor de transport.
+	ecuatie: T(i+1) = x(i) * y(i) + (x(i) + y(i))* T(i)
+
+b)
+Ecuatia pentru 
+g(0) = x(0) * y(0);   p(0) = x(0) + y(0);
+g(1) = x(1) * y(1);   p(1) = x(1) + y(1);
+
+G(0,1) = g(1) + p(1)*g(0)
+P(0,1) = p(1)*p(0)
+
+c) T2 = G(0,1) + P(0,1)*T(0);
+   T4 = G(2,3) + P(2,3)*G(0,1) + P(2,3)*P(0,1)*T(0);
+   T6 = G(4,5) + P(4,5)*G(2,3) + P(4,5)*P(2,3)*G(0,1) + P(4,5)*P(2,3)*P(0,1)*T(0);
+   T8 = G(6,7) + P(6,7)*G(4,5) + P(6,7)*P(4,5)*G(2,3) + P(6,7)*p(4,5)*P(2,3)*G(0,1) + P(6,7)*p(4,5)*P(2,3)*P(0,1)*T(0);
+

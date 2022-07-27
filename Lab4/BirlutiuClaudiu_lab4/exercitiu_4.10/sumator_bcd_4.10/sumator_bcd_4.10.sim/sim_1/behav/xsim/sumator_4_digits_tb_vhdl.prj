@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../sumator_bcd_4.10.srcs/sources_1/new/sumator_4.vhd" \
+"../../../../sumator_bcd_4.10.srcs/sources_1/new/sum_zecimal.vhd" \
+"../../../../sumator_bcd_4.10.srcs/sources_1/new/sumator_4_digits.vhd" \
+"../../../../sumator_bcd_4.10.srcs/sim_1/new/sumator_4_digits_tb.vhd" \
+
+# Do not sort compile order
+nosort

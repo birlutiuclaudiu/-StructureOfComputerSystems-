@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../MulSimplu.srcs/sources_1/imports/new/addn.vhd" \
+"../../../../MulSimplu.srcs/sources_1/imports/new/fdn.vhd" \
+"../../../../MulSimplu.srcs/sources_1/new/fsm_cmd.vhd" \
+"../../../../MulSimplu.srcs/sources_1/imports/new/srrn.vhd" \
+"../../../../MulSimplu.srcs/sources_1/new/mul_shift_add.vhd" \
+"../../../../MulSimplu.srcs/sim_1/new/mul_shift_add_tb.vhd" \
+
+# Do not sort compile order
+nosort

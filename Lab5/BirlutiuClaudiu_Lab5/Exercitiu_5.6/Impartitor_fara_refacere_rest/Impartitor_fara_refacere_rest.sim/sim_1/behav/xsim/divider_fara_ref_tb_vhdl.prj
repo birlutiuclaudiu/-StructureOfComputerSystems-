@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Impartitor_fara_refacere_rest.srcs/sources_1/imports/sources_1/imports/new/addn.vhd" \
+"../../../../Impartitor_fara_refacere_rest.srcs/sources_1/imports/sources_1/imports/new/fdn.vhd" \
+"../../../../Impartitor_fara_refacere_rest.srcs/sources_1/imports/sources_1/new/srln.vhd" \
+"../../../../Impartitor_fara_refacere_rest.srcs/sources_1/new/fsm_cmd.vhd" \
+"../../../../Impartitor_fara_refacere_rest.srcs/sources_1/new/divider_fara_ref.vhd" \
+"../../../../Impartitor_fara_refacere_rest.srcs/sim_1/new/divider_fara_ref_tb.vhd" \
+
+# Do not sort compile order
+nosort

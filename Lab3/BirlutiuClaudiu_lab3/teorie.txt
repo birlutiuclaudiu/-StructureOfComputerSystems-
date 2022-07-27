@@ -1,0 +1,20 @@
+ 3.1
+ a) Care este principiul codificarii iesirilor prin bitii de stare? Care sunt avantajele si dezabatajele aceste tehnici?
+    -In cadrul acestui principiu, iesirile automatului sunt date chiar de bitii de stare; astfel, iesirile vor corespunde cu valorile pastrate in registrul de stare. Aceasta tehnica poate sa duca un numar de bitit suplimentari pentru codificarea starilor.
+    Principalele avantaje ale acestei tehnici constau in cresterea vitezei de transmisie a iesirilor automatului la pinii circuitului, precum si optimizari la nvelul resurselor disponibile si ale performantei.
+    Un principal dezavantaj il reprezinta faptul ca proiectul va fi mai dificil de inteles si modificat, precum se vor introduce si biti suplimentari pentru codificarea starilor (ce duce implicit la aparitia unor stari ilegale).
+
+b) Care este principiul codificarii cu un bitabil pe stare si care este avantajul principal al acestei tehnici?
+    Aceasta tehnica consta in utilizarea unui numar de bistabile egal cu numarul de stari ale automatului. Mai precis, pentru fiecare stare va exista un bistabil si un sigur bistabil va fi setat la un moment dat.
+    Avantajul principal al acestei tehnici se reflecta in numarul mic de porti necesare pentru decodificara informatiei de stare pentru semnalele de iesire si pentru tranzitia starilor comparativ cu numarul de porit necesare utilizate in cadrul celorlalte tehnici.
+
+c) Cum pot fi proiectate automatele de stare pentru a fi tolerante la defecte?
+    Pentru a fi tolerante la defecte, autmotelor trebuie sa li se adauge logici care sa asigure iesirea din starile ilegale. Etape in adaugarea acestor logici:
+    -proiectantul trebuie sa determine numarul starilor ilegale
+    -daca se utilizeaza un tip enumerat, atunci proiectantul trebuie sa includa un nume de stare in cadrul tipului eneumerat pentru fiecare stare nedefinita
+    -trebuie specificata o tranzitie a fsm-ului pentru ca acesta sa iasa din starea ilegala
+
+    3.2
+    Din punct de vedere functional nu e corect pentru ca se poate ajunge la situatia in care multe iesiri sa fie active cand automatul se afla intr-o stare. De exemplu, daca automatul la inceput se afla in starea S0, iesirea outA va fi 1, iar daca se trece in starea S1, iesirea outB se va activa, dar va fi activa si iesirea outA ramasa de la starea anterioara.
+    Pentru a rezolva aceasta situatie, o varianta ar fi ca pe fiecare ramura a if-ului sa fie asignate valori tuturor semnalelor de iesire.
+
